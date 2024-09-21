@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Nama dan NPM</title>
+    <link rel="stylesheet" href="rizal2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Input Nama dan NPM</h1>
+        <form id="inputForm">
+            <input type="text" id="nama1" placeholder="Nama Pertama" required>
+            <input type="text" id="npm1" placeholder="NPM Pertama" required>
+            <input type="text" id="nama2" placeholder="Nama Kedua" required>
+            <input type="text" id="npm2" placeholder="NPM Kedua" required>
+            <button type="submit">Kirim</button>
+        </form>
+        <div id="result" class="result"></div>
+    </div>
+
+    <script>
+        document.getElementById('inputForm').onsubmit = function(event) {
+            event.preventDefault(); 
+            let nama1 = document.getElementById('nama1').value;
+            let npm1 = document.getElementById('npm1').value;
+            let nama2 = document.getElementById('nama2').value;
+            let npm2 = document.getElementById('npm2').value;
+
+            let resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = `
+                <h2>Hasil Input:</h2>
+                <p><strong>Nama 1:</strong> ${nama1} - <strong>NPM 1:</strong> ${npm1}</p>
+                <p><strong>Nama 2:</strong> ${nama2} - <strong>NPM 2:</strong> ${npm2}</p>`;
+        };
+    </script>
+</body>
+</html>
