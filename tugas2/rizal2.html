@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="rizal2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Input Nama dan NIM</h1>
+        <button onclick="inputData()">Masukkan Data</button>
+        
+        <div class="output" id="output">
+        </div>
+    </div>
+
+    <script>
+        function inputData() {
+            let data = [];
+            for (let i = 0; i < 2; i++) {
+                let name = prompt("Masukkan Nama:");
+                let nim = prompt("Masukkan Npm:");
+                data.push({ name, nim });
+            }
+            let outputDiv = document.getElementById("output");
+            outputDiv.innerHTML = "<h2>Data yang Dimasukkan:</h2>";
+
+            data.forEach((item, index) => {
+                outputDiv.innerHTML += `<p>Data ${index + 1}: <strong>${item.name}</strong>, NIM: <strong>${item.nim}</strong></p>`;
+            });
+        }
+    </script>
+</body>
+</html>
