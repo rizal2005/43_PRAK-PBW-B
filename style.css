@@ -1,0 +1,97 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9; /* Latar belakang lembut */
+    color: #333; /* Warna teks utama */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-color: #210ecb; /* Warna latar belakang hijau */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #4CAF50; /* Warna hijau untuk heading */
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+/* Styling for the Image */
+img {
+    position: relative;
+    left: -15px;
+    width: 150px;  /* Menentukan lebar gambar */
+    height: 140px; /* Menentukan tinggi gambar agar 1:1 */
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan */
+    margin-right: 20px;
+}
+
+/* Styling for Paragraphs */
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+/* List Styling */
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+ul li {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+/* Styling for the Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #000cf2;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+td a {
+    color: #4CAF50; /* Warna hijau untuk link */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+td a:hover {
+    text-decoration: underline;
+    color: #45a049; /* Hover effect dengan warna sedikit lebih gelap */
+}
+
+/* Styling for the Footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 0 0 10px 10px;
+}
